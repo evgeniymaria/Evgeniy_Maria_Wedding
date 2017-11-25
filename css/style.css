@@ -205,6 +205,11 @@ h1 {
 
 .sixth-desc-comm { font-size: 20px; }
 
+.sixth-desc-cont {
+  font-size: 18px;
+  line-height: 40px;
+}
+
 /* STYLES FOR TABLET */
 @media screen and (max-device-width: 1300px) {
   .fifth-page { padding-right: 10px; }
