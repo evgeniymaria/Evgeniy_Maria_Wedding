@@ -1,0 +1,15 @@
+@font-face { 
+  font-family: "Nautilus";
+  src: url("fonts/nautilus/nautilus.otf");
+}
+
+@font-face { 
+  font-family: "Gotham Pro";
+  src: url("fonts/gothampro/gothampro.ttf");
+}
+
+/* Corinthia */
+@font-face {
+  font-family: 'Corinthia';
+  src: url('fonts/corinthia/Corinthia.ttf');
+}

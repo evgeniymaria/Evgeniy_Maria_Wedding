@@ -1,0 +1,327 @@
+/* STYLES FOR DESKTOP */
+body {
+  margin: 0;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: Gotham Pro;
+}
+
+h1 {
+  font-family: Nautilus;
+  font-weight: 100;
+}
+
+/* First page */
+.first {
+  color: white;
+  padding: 10px;
+  background-image: url('../img/bg1-2.png');
+  background-size: cover;
+}
+
+.first-card {
+  padding-top: 35px;
+  text-align: center;
+  font-family: Nautilus;
+}
+
+.first-card-head {
+  font-family: 'Corinthia', serif;
+  font-size: 120px;
+  margin-top: 30px;
+}
+
+.first-card-head-plus {
+  font-weight: 200;
+  margin: 0 5px;
+}
+
+.first-card-date {
+  margin-top: 70px;
+  font-size: 46px;
+}
+
+.first-footer {
+  background-image: url('../img/bg1-3.png');
+  height: 150px;
+  background-size: cover;
+}
+
+.first-table-wrapper {
+  background-color: #f8f8f8;
+  background-image: url('../img/snow.png');
+  padding: 20px; 
+  font-family: Nautilus;
+}
+
+.first-table {
+  color: black;
+  font-size: 42px !important;
+  outline: none;
+  border-collapse:collapse;
+  margin: 0 auto;
+  text-align: center;
+  font-size: inherit;
+}
+
+.first-table td { padding: 3px 8px 3px 8px; }
+
+.first-table-colon { width: 10px; }
+
+/* Second page */
+.second {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-photos-bg {
+  background-image: url('../img/bg2.png');
+  background-size: cover;
+  height: 355px;
+}
+
+.second-photos {
+  width: 700px;
+  align-self: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.second-content {
+  background-color: #f8f8f8;
+  background-image: url('../img/snow.png');
+  display: flex;
+  padding: 40px 0;
+  justify-content: center;
+}
+
+.second-content-person {
+  width: 300px;
+  margin: 0 20px;
+  text-align: left;
+  z-index: 1;
+}
+
+.second-content-person-head {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Corinthia', serif;
+  font-size: 60px;
+}
+
+.second-content-person-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.second-content-person-desc-title { font-size: 24px; }
+
+.second-content-person-desc-text { text-align: left; }
+
+/* Third page */
+.third {
+  padding: 40px 10px;
+  padding-left: 30%;
+  background-image: url('../img/bg3.png');
+  background-size: cover;
+  color: white;
+}
+
+.third-invitation {
+  text-align: center;
+  line-height: 50px;
+}
+
+.third-invitation-text { font-weight: bold; }
+
+.third-invitation-text-date { font-size: 38px; }
+
+/* Fourth page */
+.fourth {
+  background-color: #f8f8f8;
+  background-image: url('../img/snow.png');
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.fourth-mob { display: none; }
+
+.fourth-image { width: 100%; }
+
+/* Fifth page */
+.fifth {
+  color: white;
+  padding: 30px 10px;
+  padding-right: 20%;
+  background-image: url('../img/bg2.png');
+  background-size: cover;
+}
+
+.fifth-code { text-align: center; }
+
+.fifth-code-head {
+  font-family: Nautilus;
+  font-size: 42px;
+}
+
+.fifth-code-content-text {
+  align-self: center;
+  margin-left: 20px;
+  font-weight: bold;
+  max-width: 800px;
+}
+
+.fifth-code-content { display: flex; }
+
+.fifth-code-content-rustic-pc { align-self: center; }
+
+.fifth-code-content-rustic-mob { display: none; }
+
+.fifth-code-content-rustic-mob-img { width: 300px; }
+
+/* Sixth page */
+.sixth {
+  background-color:#f8f8f8;
+  background-image: url('../img/snow.png');
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+}
+
+.sixth-map-pc { display: initial; }
+
+.sixth-map-mob { display: none; }
+
+.sixth-map-mob-content { align-self: center; }
+
+.sixth-desc {
+  margin: auto 40px;
+  font-size: 24px;
+  line-height: 70px;
+}
+
+.sixth-desc-comm { font-size: 20px; }
+
+/* STYLES FOR TABLET */
+@media screen and (max-device-width: 1300px) {
+  .fifth-page { padding-right: 10px; }
+}
+
+/* STYLES FOR MOBILE */
+@media screen and (max-device-width: 670px) {
+  body {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .br-pc { display: none; }
+
+  p {
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 20px;
+  }
+
+  h1 { line-height: 50px; }
+
+  /* First page */
+  .first {
+    padding: 20px 0;
+    line-height: 40px;
+  }
+  
+  .first-card { padding: 0; }
+
+  .first-card-head {
+    font-size: 84px;
+    margin-top: 20px;
+  }
+
+  .first-card-head-plus {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .first-card-date { font-size: 30px; }
+
+  .first-card-time { display: block; }
+
+  .first-table { font-size: 26px !important; }
+
+  .first-table td { padding: 0; }
+
+  /* Second page */
+  .second { flex-direction: column; }
+
+  .second-photos {
+    width: 100%;
+    position: relative;
+    margin-top: -340px;
+  }
+
+  .second-content-person { margin-bottom: 20px; }
+
+  .second-photos-bg { height: 330px; }
+
+  .second-content { flex-direction: column; }
+  
+  /* Third page */
+  .third {
+    padding: 10px;
+    background-image: url('../img/bg1-2.png');
+    background-size: cover;
+  }
+
+  .third-invitation { line-height: 35px; }
+
+  .third-invitation-text-date { font-size: 28px; }
+
+  /* Fourth page */
+  .fourth-pc { display: none; }
+  
+  .fourth-mob {
+    display: block;
+    background-color:#f8f8f8;
+    background-image: url('../img/snow.png');
+  }
+
+  /* Fifth page */
+  .fifth { padding: 20px 2px; }
+
+  .fifth-code-head { font-size: 34px; }
+
+  .fifth-code-content { flex-direction: column; }
+
+  .fifth-code-content-text {
+    line-height: 40px;
+    margin-left: 0;
+  }
+
+  .fifth-code-content-rustic-pc { display: none; }
+
+  .fifth-code-content-rustic-mob { display: initial; }
+
+  /* Sixth page */
+  .sixth {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sixth-map-pc { display: none; }
+
+  .sixth-map-mob {
+    display: initial;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .sixth-desc {
+    margin: 20px 10px 0 10px;
+    text-align: center;
+    line-height: 40px;
+  }
+}
