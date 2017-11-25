@@ -1,6 +1,10 @@
 window.onload = function() {
   setGuests()
   setCounter()
+
+  if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+    document.getElementsByClassName('second-photos')[0].style.marginTop = '-350px'
+  }
 }
 
 function setGuests() {
