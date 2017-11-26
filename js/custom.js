@@ -5,13 +5,14 @@ window.onload = function() {
   var ua = navigator.userAgent.toLowerCase()
   var isSafari
   if (ua.indexOf('safari') != -1 && ua.indexOf('chrome') === -1) { 
-    isSafari = true
-  }
-
-  if (isSafari) {
     document.getElementsByClassName('second-photos')[0].style.marginTop = '-350px'
   }
 
+  var fr = navigator.userAgent.toLowerCase()
+  if (fr.indexOf("firefox")) {
+    document.getElementsByClassName('second-photos')[0].style.marginTop = '-350px'
+  }
+  
   if (navigator.appName == 'Microsoft Internet Explorer' || 
       !!(navigator.userAgent.match(/Trident/) ||
       navigator.userAgent.match(/rv:11/)) ||
