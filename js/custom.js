@@ -8,11 +8,14 @@ window.onload = function() {
     isSafari = true
   }
 
+  if (isSafari) {
+    document.getElementsByClassName('second-photos')[0].style.marginTop = '-350px'
+  }
+
   if (navigator.appName == 'Microsoft Internet Explorer' || 
       !!(navigator.userAgent.match(/Trident/) ||
       navigator.userAgent.match(/rv:11/)) ||
-      (typeof $.browser !== "undefined" && $.browser.msie == 1) ||
-      isSafari) {
+      (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
     document.getElementsByClassName('second-photos')[0].style.marginTop = '-350px'
   }
 }
