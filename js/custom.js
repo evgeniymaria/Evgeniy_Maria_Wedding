@@ -29,8 +29,10 @@ function setGuests() {
   var guestEl3 = document.getElementById('guest3')
   var delim1 = document.getElementById('delim1')
   var delim2 = document.getElementById('delim2')
+  var you = document.getElementById('you')
   if (guests.names.length > 1) {
     dearEl.textContent  = 'Дорогие'
+    you.textContent = 'вас'
     for (var j=0; j < guests.names.length; j++) {
       if (j == 0 && guests.names.length === 1) {
         guestEl1.textContent  = ''
@@ -59,13 +61,16 @@ function setGuests() {
         guests.names[0] == 'Маша' ||
         guests.names[0] == 'Александра') {
       dearEl.textContent  = 'Дорогая'
+      you.textContent = 'тебя'
     } else if (guests.names[0] == 'Вова' ||
                guests.names[0] == 'Коля' ||
                guests.names[0] == 'Максим' ||
                guests.names[0] == 'дедушка Ваня') {
       dearEl.textContent  = 'Дорогой'
+      you.textContent = 'тебя'
     } else {
       dearEl.textContent  = 'Дорогие'
+      you.textContent = 'вас'
     }
     guestEl1.textContent  = ''
     guestEl2.textContent  = ''
