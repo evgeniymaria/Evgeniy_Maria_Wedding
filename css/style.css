@@ -77,14 +77,13 @@ h1 {
 .second-photos-bg {
   background-image: url('../img/bg2.png');
   background-size: cover;
-  height: 355px;
+  display: flex;
+  justify-content: center;
 }
 
 .second-photos {
   width: 700px;
   align-self: center;
-  position: absolute;
-  z-index: 0;
 }
 
 .second-content {
@@ -212,7 +211,90 @@ h1 {
 
 /* STYLES FOR TABLET */
 @media screen and (max-device-width: 1300px) {
-  .fifth-page { padding-right: 10px; }
+  body {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .br-pc { display: none; }
+
+  p {
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 20px;
+  }
+
+  h1 { line-height: 50px; }
+
+  /* First page */
+  .first {
+    padding: 20px 0;
+    line-height: 40px;
+  }
+  
+  .first-card { padding: 0; }
+
+  .first-card-head { margin-top: 80px; }
+
+  .first-card-head-plus { margin-top: 15px; }
+
+
+  .first-table td { padding: 0; }
+
+  /* Second page */
+  .second-photos { width: 100%; }
+
+  .second-content-person {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Third page */
+  .third {
+    padding: 10px;
+    background-image: url('../img/bg1-2.png');
+    background-size: cover;
+  }
+
+  .third-invitation { line-height: 35px; }
+
+  .third-invitation-text-date { font-size: 28px; }
+
+  /* Fourth page */
+
+  /* Fifth page */
+  .fifth { padding: 20px 2px; }
+
+  .fifth-code-head { font-size: 34px; }
+
+  .fifth-code-content-text {
+    line-height: 40px;
+    margin-left: 0;
+  }
+
+  .fifth-code-content-rustic-pc { display: none; }
+
+  .fifth-code-content-rustic-mob { display: initial; }
+
+  /* Sixth page */
+  .sixth {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sixth-map-pc { display: none; }
+
+  .sixth-map-mob {
+    display: initial;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .sixth-desc {
+    margin: 20px 10px 0 10px;
+    text-align: center;
+    line-height: 40px;
+  }
 }
 
 /* STYLES FOR MOBILE */
@@ -260,17 +342,14 @@ h1 {
   /* Second page */
   .second { flex-direction: column; }
 
-  .second-photos {
-    width: 100%;
-    position: relative;
-    margin-top: -340px;
-  }
-
-  .second-content-person { margin-bottom: 20px; }
-
-  .second-photos-bg { height: 330px; }
+  .second-photos { width: 100%; }
 
   .second-content { flex-direction: column; }
+
+  .second-content-person {
+    align-self: center;
+    margin-bottom: 20px;
+  }
   
   /* Third page */
   .third {
