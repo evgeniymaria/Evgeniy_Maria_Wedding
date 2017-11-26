@@ -311,6 +311,7 @@ h1 {
     align-self: center;
     -webkit-align-self: center;
     margin: 0 auto;
+    min-width: 320px;
   }
 
   .sixth-desc {
