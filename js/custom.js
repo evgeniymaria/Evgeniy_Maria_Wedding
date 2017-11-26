@@ -2,7 +2,17 @@ window.onload = function() {
   setGuests()
   setCounter()
 
-  if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+  var ua = navigator.userAgent.toLowerCase()
+  var isSafari
+  if (ua.indexOf('safari') != -1 && ua.indexOf('chrome') === -1) { 
+    isSafari = true
+  }
+
+  if (navigator.appName == 'Microsoft Internet Explorer' || 
+      !!(navigator.userAgent.match(/Trident/) ||
+      navigator.userAgent.match(/rv:11/)) ||
+      (typeof $.browser !== "undefined" && $.browser.msie == 1) ||
+      isSafari) {
     document.getElementsByClassName('second-photos')[0].style.marginTop = '-350px'
   }
 }
