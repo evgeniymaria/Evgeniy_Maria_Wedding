@@ -71,14 +71,18 @@ h1 {
 /* Second page */
 .second {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 .second-photos-bg {
   background-image: url('../img/bg2.png');
   background-size: cover;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .second-photos {
@@ -90,8 +94,10 @@ h1 {
   background-color: #f8f8f8;
   background-image: url('../img/snow.png');
   display: flex;
+  display: -webkit-flex;
   padding: 40px 0;
   justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .second-content-person {
@@ -141,7 +147,9 @@ h1 {
   background-color: #f8f8f8;
   background-image: url('../img/snow.png');
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   padding-bottom: 30px;
 }
 
@@ -172,7 +180,10 @@ h1 {
   max-width: 800px;
 }
 
-.fifth-code-content { display: flex; }
+.fifth-code-content {
+  display: flex;
+  display: -webkit-flex;
+}
 
 .fifth-code-content-rustic-pc { align-self: center; }
 
@@ -186,7 +197,9 @@ h1 {
   background-image: url('../img/snow.png');
   padding: 0 10px;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
+  -webkit-justify-content: center;
   line-height: 50px;
 }
 
@@ -340,11 +353,17 @@ h1 {
   .first-table td { padding: 0; }
 
   /* Second page */
-  .second { flex-direction: column; }
+  .second {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
 
   .second-photos { width: 100%; }
 
-  .second-content { flex-direction: column; }
+  .second-content {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
 
   .second-content-person {
     align-self: center;
@@ -376,7 +395,10 @@ h1 {
 
   .fifth-code-head { font-size: 34px; }
 
-  .fifth-code-content { flex-direction: column; }
+  .fifth-code-content {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
 
   .fifth-code-content-text {
     line-height: 40px;
@@ -390,6 +412,7 @@ h1 {
   /* Sixth page */
   .sixth {
     flex-direction: column;
+    -webkit-flex-direction: column;
     padding: 0;
     justify-content: center;
     align-items: center;
