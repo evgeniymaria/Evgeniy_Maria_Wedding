@@ -88,6 +88,7 @@ h1 {
 .second-photos {
   width: 700px;
   align-self: center;
+  -webkit-align-self: center;
 }
 
 .second-content {
@@ -175,6 +176,7 @@ h1 {
 
 .fifth-code-content-text {
   align-self: center;
+  -webkit-align-self: center;
   margin-left: 20px;
   font-weight: bold;
   max-width: 800px;
@@ -185,7 +187,10 @@ h1 {
   display: -webkit-flex;
 }
 
-.fifth-code-content-rustic-pc { align-self: center; }
+.fifth-code-content-rustic-pc {
+  align-self: center;
+  -webkit-align-self: center;
+}
 
 .fifth-code-content-rustic-mob { display: none; }
 
@@ -207,7 +212,10 @@ h1 {
 
 .sixth-map-mob { display: none; }
 
-.sixth-map-mob-content { align-self: center; }
+.sixth-map-mob-content {
+  align-self: center;
+  -webkit-align-self: center;
+}
 
 .sixth-desc {
   margin: auto 40px;
@@ -258,6 +266,7 @@ h1 {
 
   .second-content-person {
     align-self: center;
+    -webkit-align-self: center;
     margin-bottom: 20px;
   }
   
@@ -300,6 +309,7 @@ h1 {
   .sixth-map-mob {
     display: initial;
     align-self: center;
+    -webkit-align-self: center;
     margin: 0 auto;
   }
 
@@ -367,6 +377,7 @@ h1 {
 
   .second-content-person {
     align-self: center;
+    -webkit-align-self: center;
     margin-bottom: 20px;
   }
   
@@ -423,6 +434,7 @@ h1 {
   .sixth-map-mob {
     display: initial;
     align-self: center;
+    -webkit-align-self: center;
     margin: 0 auto;
   }
 
