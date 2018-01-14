@@ -98,8 +98,11 @@ function dayCalc(wdDate) {
   var currDate = new Date()
   var timeDiff = Math.abs(wdDate.getTime() - currDate.getTime())
   var dateDiff = Math.floor(timeDiff / (1000 * 3600 * 24))
+  if (dateDiff < 0) dateDiff = 0
   var hourDiff = Math.floor(timeDiff / (1000 * 3600)) % 24
+  if (hourDiff < 0) hourDiff = 0
   var minDiff = Math.floor(timeDiff / (1000 * 60)) % 60
+  if (minDiff < 0) minDiff = 0
   HTMLUpdate(dateDiff, hourDiff, minDiff)
 }
 
